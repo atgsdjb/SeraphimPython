@@ -12,12 +12,8 @@ def client_handler(sock):
 
 
 def echo_server(hostname, port):
-    addrinfo = socket.getaddrinfo(hostname, port, 
-                                                 
-socket.AF_UNSPEC,
-                                  socket.SOCK_STREAM)
-    (family, socktype, proto, 
-     canonname, sockaddr) = addrinfo[0]
+    addrinfo = socket.getaddrinfo(hostname, port, socket.AF_UNSPEC,socket.SOCK_STREAM)
+    (family, socktype, proto, canonname, sockaddr) = addrinfo[0]
 
     with closing(socket.socket(family,
                                socktype, 

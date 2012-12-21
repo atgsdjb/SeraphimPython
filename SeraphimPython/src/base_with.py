@@ -18,7 +18,7 @@ if __name__ =="__main__":
 #        t.show()
 #        t.throw_e()
 #        print 'ok'
-    file = open('seraphim.log','w+')
+    fi = open('seraphim.log','w+')
     with closing(file) as f:
-        str = f.read()
+        s = f.read()
         print str
